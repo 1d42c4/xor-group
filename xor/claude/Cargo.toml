@@ -1,0 +1,13 @@
+[package]
+name = "xorfiles"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "XOR two files byte-by-byte and write the result to a third file"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
